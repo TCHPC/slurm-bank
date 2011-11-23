@@ -11,7 +11,7 @@ if they do not have hours in their account then they cannot run jobs.
 
 Requirements (tested with)
 
-* SLURM 2.2.0
+* SLURM 2.2.0, 2.2.7
 * Scientificlinux 5.4 (bash, rsync, perl)
 
 Documentation
@@ -35,6 +35,16 @@ the html documetation. If you do not have ikiwiki installed you can do:
 
 If you have a clone of the repository, there is a pre-generated set of
 html pages stored in the html branch.
+
+Tests
+=====
+
+There is a simple test suite to make sure things are working as we
+expect. To execute them,
+
+	make test
+
+The tests behave differently if you run them as a normal user or as root.
 
 Doing a release
 ===============
